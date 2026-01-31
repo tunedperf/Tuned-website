@@ -8,12 +8,12 @@ export default function Home() {
 		<main style={{ fontFamily: 'Inter, Arial, sans-serif', background: '#181818', color: '#fff', minHeight: '100vh' }}>
 			{/* Top Bar */}
 			<div style={{ background: '#000', color: '#fff', padding: '0.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '1rem', fontWeight: 500, letterSpacing: '0.5px', borderBottom: '2px solid #222' }}>
-				<div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem', marginLeft: '2rem' }}>
-					<span>📞 07 3265 1238</span>
-					<span>✉️ driftkingperformance@hotmail.com</span>
-					<span>📍 187 Robinson Rd East, Geebung QLD 4034</span>
-					<span>🕒 Mon - Fri: 8:00am - 5:00pm</span>
-				</div>
+				   <div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem', marginLeft: '2rem' }}>
+					   <span>📞 (07) 3865 1327</span>
+					   <span>✉️ info@tuned-performance.com.au</span>
+					   <span>📍 2/17 Robinson Rd East, Virginia, 4014 QLD</span>
+					   <span>🕒 Mon - Fri: 8:00am - 5:00pm</span>
+				   </div>
 				<div style={{ display: 'flex', alignItems: 'center', gap: '1.2rem', marginRight: '2rem' }}>
 					<a href="#contact" style={{ background: '#ff7300', color: '#fff', padding: '0.6rem 1.3rem', borderRadius: 5, fontWeight: 700, textDecoration: 'none', marginRight: '1.2rem', boxShadow: '0 2px 8px rgba(255,115,0,0.12)' }}>GET A QUOTE!</a>
 					<a href="#" style={{ color: '#ff7300', fontSize: '1.2rem' }}>f</a>
@@ -26,7 +26,6 @@ export default function Home() {
 			{/* Hero Section */}
 			<section style={{
 				minHeight: '70vh',
-				background: 'url(https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1500&q=80) center/cover no-repeat',
 				position: 'relative',
 				display: 'flex',
 				alignItems: 'center',
@@ -34,7 +33,24 @@ export default function Home() {
 				textAlign: 'center',
 				overflow: 'hidden',
 			}}>
-				<div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.65)', zIndex: 0 }} />
+				<video
+					autoPlay
+					loop
+					muted
+					playsInline
+					style={{
+						position: 'absolute',
+						top: 0,
+						left: 0,
+						width: '100%',
+						height: '100%',
+						objectFit: 'cover',
+						zIndex: 0,
+						opacity: 0.65,
+					}}
+				>
+					<source src="/hero.mp4" type="video/mp4" />
+				</video>
 				<div style={{ position: 'relative', zIndex: 1 }}>
 					<h1 style={{ fontSize: '3.2rem', fontWeight: 900, marginBottom: '1.2rem', letterSpacing: '-1px', color: '#fff', textShadow: '0 2px 16px #000' }}>Tuned Performance</h1>
 					<p style={{ fontSize: '1.4rem', maxWidth: 700, margin: '0 auto 2.2rem auto', fontWeight: 500, color: '#ff7300', textShadow: '0 2px 8px #000' }}>
