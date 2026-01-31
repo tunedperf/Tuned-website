@@ -65,12 +65,60 @@ export default function Home() {
 						<section style={{ padding: '4rem 1rem 3rem 1rem', maxWidth: 1200, margin: '0 auto' }}>
 							<h2 style={{ textAlign: 'center', marginBottom: '2.5rem', fontSize: '2.2rem', fontWeight: 700, color: '#ff7300', letterSpacing: '1px' }}>Our Services</h2>
 							<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: '2.5rem' }}>
-								<ServiceCard title="Custom Wiring Looms" icon="🧰" desc="In-house, built-to-suit performance wiring looms using quality components and cabling." />
-								<ServiceCard title="Engine Packages" icon="🏎️" desc="Specialising in performance GTR RB26 engines, from freshen-ups to big HP builds." />
-								<ServiceCard title="Bolt-On Upgrades" icon="🔩" desc="Value-for-money performance upgrades, sourced and installed professionally." />
-								<ServiceCard title="General Servicing & Repairs" icon="🛠️" desc="Regular servicing and repairs to keep your performance car running reliably." />
-								<ServiceCard title="EFI Dyno Tuning" icon="📊" desc="State-of-the-art all-wheel-drive dyno tuning for all popular ECUs." />
-								<ServiceCard title="Fabrication" icon="⚙️" desc="Custom exhausts, intercooler piping, and turbo kit fabrication in-house." />
+								<ServiceCard
+									title="Custom Wiring Looms"
+									icon={<svg width="40" height="40" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff7300"/><path d="M7 17v-2a2 2 0 012-2h6a2 2 0 012 2v2" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><rect x="7" y="7" width="10" height="6" rx="2" fill="#fff"/></svg>}
+									desc="In-house, built-to-suit performance wiring looms using quality components and cabling."
+								/>
+								<ServiceCard
+									title="Engine Packages"
+									icon={<svg width="40" height="40" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff7300"/><path d="M7 17l5-5 5 5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><circle cx="12" cy="9" r="2" fill="#fff"/></svg>}
+									desc="Specialising in performance GTR RB26 engines, from freshen-ups to big HP builds."
+								/>
+								<ServiceCard
+									title="Bolt-On Upgrades"
+									icon={<svg width="40" height="40" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff7300"/><path d="M8 16l8-8M8 8h8v8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>}
+									desc="Value-for-money performance upgrades, sourced and installed professionally."
+								/>
+								<ServiceCard
+									title="General Servicing & Repairs"
+									icon={<svg width="40" height="40" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff7300"/><path d="M12 8v4l3 3" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>}
+									desc="Regular servicing and repairs to keep your performance car running reliably."
+								/>
+								<ServiceCard
+									title="EFI Dyno Tuning"
+									icon={<svg width="40" height="40" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff7300"/><path d="M4 16h16M4 12h16M4 8h16" stroke="#fff" strokeWidth="2" strokeLinecap="round"/></svg>}
+									desc="State-of-the-art all-wheel-drive dyno tuning for all popular ECUs."
+								/>
+								<ServiceCard
+									title="Fabrication"
+									icon={<svg width="40" height="40" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff7300"/><path d="M12 6v6l4 2" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>}
+									desc="Custom exhausts, intercooler piping, and turbo kit fabrication in-house."
+								/>
+										{/* Social Media Feed */}
+										<section style={{ background: '#222', padding: '3rem 1rem', margin: '0 auto', maxWidth: 900, borderRadius: 16, marginTop: '3rem', textAlign: 'center' }}>
+											<h2 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.7rem', marginBottom: '1.5rem' }}>Follow Us on Instagram</h2>
+											<iframe
+												src="https://www.instagram.com/tuned.performance.aus/embed"
+												width="100%"
+												height="400"
+												style={{ border: 'none', borderRadius: 12, background: '#181818' }}
+												allowTransparency={true}
+												allow="encrypted-media"
+												title="Instagram Feed"
+											></iframe>
+										</section>
+
+										{/* Contact Form */}
+										<section style={{ background: '#fff', color: '#181818', padding: '3rem 1rem', margin: '3rem auto 0 auto', maxWidth: 600, borderRadius: 16, boxShadow: '0 2px 24px rgba(0,0,0,0.10)' }}>
+											<h2 style={{ color: '#ff7300', fontWeight: 700, fontSize: '2rem', marginBottom: '1.5rem', textAlign: 'center' }}>Contact Form</h2>
+											<form style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+												<input type="text" placeholder="Your Name" required style={{ padding: '0.9rem', borderRadius: 8, border: '1px solid #ccc', fontSize: '1.1rem' }} />
+												<input type="email" placeholder="Your Email" required style={{ padding: '0.9rem', borderRadius: 8, border: '1px solid #ccc', fontSize: '1.1rem' }} />
+												<textarea placeholder="Your Message" required rows={5} style={{ padding: '0.9rem', borderRadius: 8, border: '1px solid #ccc', fontSize: '1.1rem' }} />
+												<button type="submit" style={{ background: '#ff7300', color: '#fff', padding: '1rem', borderRadius: 8, fontWeight: 700, fontSize: '1.1rem', border: 'none', cursor: 'pointer', marginTop: '0.5rem' }}>Send Message</button>
+											</form>
+										</section>
 							</div>
 						</section>
 
