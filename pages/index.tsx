@@ -1,85 +1,104 @@
+
 import React from "react";
 import ServiceCard from "../app/components/ServiceCard";
 import PartnerLink from "../app/components/PartnerLink";
 
 export default function Home() {
 	return (
-		<main style={{ fontFamily: 'Inter, Arial, sans-serif', background: '#f7f8fa', color: '#181818', minHeight: '100vh' }}>
-			{/* Modern Hero Section */}
+		<main style={{ fontFamily: 'Inter, Arial, sans-serif', background: '#181818', color: '#fff', minHeight: '100vh' }}>
+			{/* Top Bar */}
+			<div style={{ background: '#000', color: '#fff', padding: '0.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '1rem', fontWeight: 500, letterSpacing: '0.5px', borderBottom: '2px solid #222' }}>
+				<div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem', marginLeft: '2rem' }}>
+					<span>📞 07 3265 1238</span>
+					<span>✉️ driftkingperformance@hotmail.com</span>
+					<span>📍 187 Robinson Rd East, Geebung QLD 4034</span>
+					<span>🕒 Mon - Fri: 8:00am - 5:00pm</span>
+				</div>
+				<div style={{ display: 'flex', alignItems: 'center', gap: '1.2rem', marginRight: '2rem' }}>
+					<a href="#contact" style={{ background: '#ff7300', color: '#fff', padding: '0.6rem 1.3rem', borderRadius: 5, fontWeight: 700, textDecoration: 'none', marginRight: '1.2rem', boxShadow: '0 2px 8px rgba(255,115,0,0.12)' }}>GET A QUOTE!</a>
+					<a href="#" style={{ color: '#ff7300', fontSize: '1.2rem' }}>f</a>
+					<a href="#" style={{ color: '#ff7300', fontSize: '1.2rem' }}>G+</a>
+					<a href="#" style={{ color: '#ff7300', fontSize: '1.2rem' }}>🟠</a>
+					<a href="#" style={{ color: '#ff7300', fontSize: '1.2rem' }}>▶️</a>
+				</div>
+			</div>
+
+			{/* Hero Section */}
 			<section style={{
-				minHeight: '60vh',
-				background: 'linear-gradient(120deg, #232526 0%, #414345 100%)',
-				color: '#fff',
+				minHeight: '70vh',
+				background: 'url(https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1500&q=80) center/cover no-repeat',
+				position: 'relative',
 				display: 'flex',
-				flexDirection: 'column',
 				alignItems: 'center',
 				justifyContent: 'center',
 				textAlign: 'center',
-				padding: '5rem 1rem 3rem 1rem',
-				position: 'relative',
 				overflow: 'hidden',
 			}}>
-				<img src="https://www.tuned-performance.com.au/images/banner-n.png" alt="Tuned Performance Banner" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.18, zIndex: 0 }} />
+				<div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.65)', zIndex: 0 }} />
 				<div style={{ position: 'relative', zIndex: 1 }}>
-					<h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1rem', letterSpacing: '-1px' }}>Tuned Performance</h1>
-					<p style={{ fontSize: '1.35rem', maxWidth: 650, margin: '0 auto 2rem auto', fontWeight: 500 }}>
+					<h1 style={{ fontSize: '3.2rem', fontWeight: 900, marginBottom: '1.2rem', letterSpacing: '-1px', color: '#fff', textShadow: '0 2px 16px #000' }}>Tuned Performance</h1>
+					<p style={{ fontSize: '1.4rem', maxWidth: 700, margin: '0 auto 2.2rem auto', fontWeight: 500, color: '#ff7300', textShadow: '0 2px 8px #000' }}>
 						High Performance Auto Tuning & Servicing in Brisbane
 					</p>
-					<a href="#contact" style={{ padding: '0.9rem 2.5rem', background: '#e63946', color: '#fff', borderRadius: 8, fontWeight: 700, fontSize: '1.1rem', textDecoration: 'none', boxShadow: '0 2px 12px rgba(230,57,70,0.15)' }}>Get a Quote</a>
+					<a href="#contact" style={{ padding: '1rem 2.7rem', background: '#ff7300', color: '#fff', borderRadius: 8, fontWeight: 700, fontSize: '1.2rem', textDecoration: 'none', boxShadow: '0 2px 12px rgba(255,115,0,0.18)' }}>Get a Quote</a>
 				</div>
 			</section>
 
 			{/* Modern Services Section */}
-			<section style={{ padding: '4rem 1rem 3rem 1rem', maxWidth: 1200, margin: '0 auto' }}>
-				<h2 style={{ textAlign: 'center', marginBottom: '2.5rem', fontSize: '2.2rem', fontWeight: 700 }}>Our Services</h2>
-				<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: '2.5rem' }}>
-					<ServiceCard title="Custom Wiring Looms" icon="🧰" desc="In-house, built-to-suit performance wiring looms using quality components and cabling." />
-					<ServiceCard title="Engine Packages" icon="🏎️" desc="Specialising in performance GTR RB26 engines, from freshen-ups to big HP builds." />
-					<ServiceCard title="Bolt-On Upgrades" icon="🔩" desc="Value-for-money performance upgrades, sourced and installed professionally." />
-					<ServiceCard title="General Servicing & Repairs" icon="🛠️" desc="Regular servicing and repairs to keep your performance car running reliably." />
-					<ServiceCard title="EFI Dyno Tuning" icon="📊" desc="State-of-the-art all-wheel-drive dyno tuning for all popular ECUs." />
-					<ServiceCard title="Fabrication" icon="⚙️" desc="Custom exhausts, intercooler piping, and turbo kit fabrication in-house." />
-				</div>
-			</section>
+						{/* Services Section */}
+						<section style={{ padding: '4rem 1rem 3rem 1rem', maxWidth: 1200, margin: '0 auto' }}>
+							<h2 style={{ textAlign: 'center', marginBottom: '2.5rem', fontSize: '2.2rem', fontWeight: 700, color: '#ff7300', letterSpacing: '1px' }}>Our Services</h2>
+							<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: '2.5rem' }}>
+								<ServiceCard title="Custom Wiring Looms" icon="🧰" desc="In-house, built-to-suit performance wiring looms using quality components and cabling." />
+								<ServiceCard title="Engine Packages" icon="🏎️" desc="Specialising in performance GTR RB26 engines, from freshen-ups to big HP builds." />
+								<ServiceCard title="Bolt-On Upgrades" icon="🔩" desc="Value-for-money performance upgrades, sourced and installed professionally." />
+								<ServiceCard title="General Servicing & Repairs" icon="🛠️" desc="Regular servicing and repairs to keep your performance car running reliably." />
+								<ServiceCard title="EFI Dyno Tuning" icon="📊" desc="State-of-the-art all-wheel-drive dyno tuning for all popular ECUs." />
+								<ServiceCard title="Fabrication" icon="⚙️" desc="Custom exhausts, intercooler piping, and turbo kit fabrication in-house." />
+							</div>
+						</section>
 
 			{/* Modern Contact Section */}
-			<section id="contact" style={{ padding: '3.5rem 1rem 2.5rem 1rem', background: '#fff', maxWidth: 800, margin: '0 auto', borderRadius: 16, boxShadow: '0 2px 24px rgba(0,0,0,0.07)' }}>
-				<h2 style={{ textAlign: 'center', fontSize: '2rem', fontWeight: 700, marginBottom: '1.5rem' }}>Contact Us</h2>
-				<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.7rem', fontSize: '1.1rem' }}>
-					<p><strong>Phone:</strong> <a href="tel:0738651327" style={{ color: '#e63946', textDecoration: 'none' }}>(07) 3865 1327</a></p>
-					<p><strong>Email:</strong> <a href="mailto:info@tuned-performance.com.au" style={{ color: '#e63946', textDecoration: 'none' }}>info@tuned-performance.com.au</a></p>
-					<p><strong>Address:</strong> 2/17 Robinson Rd East, Virginia, 4014 QLD</p>
-				</div>
-			</section>
+						{/* Contact Section */}
+						<section id="contact" style={{ padding: '3.5rem 1rem 2.5rem 1rem', background: '#222', maxWidth: 800, margin: '0 auto', borderRadius: 16, boxShadow: '0 2px 24px rgba(0,0,0,0.12)' }}>
+							<h2 style={{ textAlign: 'center', fontSize: '2rem', fontWeight: 700, marginBottom: '1.5rem', color: '#ff7300' }}>Contact Us</h2>
+							<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.7rem', fontSize: '1.1rem' }}>
+								<p><strong>Phone:</strong> <a href="tel:0738651327" style={{ color: '#ff7300', textDecoration: 'none' }}>(07) 3865 1327</a></p>
+								<p><strong>Email:</strong> <a href="mailto:info@tuned-performance.com.au" style={{ color: '#ff7300', textDecoration: 'none' }}>info@tuned-performance.com.au</a></p>
+								<p><strong>Address:</strong> 2/17 Robinson Rd East, Virginia, 4014 QLD</p>
+							</div>
+						</section>
 
 			{/* Modern Partners Section */}
-			<section style={{ padding: '3rem 1rem 2rem 1rem', background: '#f1f3f5', textAlign: 'center', marginTop: '3rem' }}>
-				<h2 style={{ fontWeight: 700, fontSize: '1.7rem', marginBottom: '1.2rem' }}>Our Partners</h2>
-				<p style={{ color: '#444', marginBottom: '2rem' }}>We work with top brands in the performance industry.</p>
-				<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem', marginTop: '1.5rem' }}>
-					<PartnerLink href="http://arp-bolts.com/">ARP Bolts</PartnerLink>
-					<PartnerLink href="http://www.dyno.com.au/">Dyno</PartnerLink>
-					<PartnerLink href="http://www.turbobygarrett.com/turbobygarrett/">Garrett</PartnerLink>
-					<PartnerLink href="http://injectordynamics.com/">Injector Dynamics</PartnerLink>
-					<PartnerLink href="http://www.nistune.com/">Nistune</PartnerLink>
-					<PartnerLink href="http://www.nittotire.com/">Nitto Tire</PartnerLink>
-					<PartnerLink href="http://www.penriteoil.com.au/">Penrite Oil</PartnerLink>
-					<PartnerLink href="http://www.precisionturbo.net/">Precision Turbo</PartnerLink>
-					<PartnerLink href="http://www.speedflow.com.au/">Speedflow</PartnerLink>
-					<PartnerLink href="http://www.tomeiusa.com/">Tomei</PartnerLink>
-					<PartnerLink href="http://www.turbosmart.com.au/">Turbosmart</PartnerLink>
-					<PartnerLink href="http://www.vi-pec.com/">Vi-PEC</PartnerLink>
-				</div>
-			</section>
+						{/* Partners Section */}
+						<section style={{ padding: '3rem 1rem 2rem 1rem', background: '#181818', textAlign: 'center', marginTop: '3rem' }}>
+							<h2 style={{ fontWeight: 700, fontSize: '1.7rem', marginBottom: '1.2rem', color: '#ff7300' }}>Our Partners</h2>
+							<p style={{ color: '#fff', marginBottom: '2rem' }}>We work with top brands in the performance industry.</p>
+							<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem', marginTop: '1.5rem' }}>
+								<PartnerLink href="http://arp-bolts.com/">ARP Bolts</PartnerLink>
+								<PartnerLink href="http://www.dyno.com.au/">Dyno</PartnerLink>
+								<PartnerLink href="http://www.turbobygarrett.com/turbobygarrett/">Garrett</PartnerLink>
+								<PartnerLink href="http://injectordynamics.com/">Injector Dynamics</PartnerLink>
+								<PartnerLink href="http://www.nistune.com/">Nistune</PartnerLink>
+								<PartnerLink href="http://www.nittotire.com/">Nitto Tire</PartnerLink>
+								<PartnerLink href="http://www.penriteoil.com.au/">Penrite Oil</PartnerLink>
+								<PartnerLink href="http://www.precisionturbo.net/">Precision Turbo</PartnerLink>
+								<PartnerLink href="http://www.speedflow.com.au/">Speedflow</PartnerLink>
+								<PartnerLink href="http://www.tomeiusa.com/">Tomei</PartnerLink>
+								<PartnerLink href="http://www.turbosmart.com.au/">Turbosmart</PartnerLink>
+								<PartnerLink href="http://www.vi-pec.com/">Vi-PEC</PartnerLink>
+							</div>
+						</section>
 
 			{/* Modern Footer */}
-			<footer style={{ background: '#232526', color: '#fff', textAlign: 'center', padding: '2rem 1rem 1rem 1rem', marginTop: '2rem', fontSize: '1rem', borderTopLeftRadius: 16, borderTopRightRadius: 16 }}>
-				<div style={{ marginBottom: '0.7rem' }}>
-					<a href="https://www.facebook.com/tuned.performance.aus" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', margin: '0 0.7rem', fontSize: '1.3rem', textDecoration: 'none' }}>Facebook</a>
-					<a href="https://plus.google.com/107163551575357959413#104093126604718687409/about" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', margin: '0 0.7rem', fontSize: '1.3rem', textDecoration: 'none' }}>Google+</a>
-				</div>
-				<div>© {new Date().getFullYear()} Tuned Performance. Website by <a href="http://www.clickdesign.com.au/" target="_blank" rel="noopener noreferrer" style={{ color: '#e63946', textDecoration: 'none' }}>Another Click Design</a></div>
-			</footer>
+						{/* Footer */}
+						<footer style={{ background: '#000', color: '#fff', textAlign: 'center', padding: '2rem 1rem 1rem 1rem', marginTop: '2rem', fontSize: '1rem', borderTopLeftRadius: 16, borderTopRightRadius: 16 }}>
+							<div style={{ marginBottom: '0.7rem' }}>
+								<a href="https://www.facebook.com/tuned.performance.aus" target="_blank" rel="noopener noreferrer" style={{ color: '#ff7300', margin: '0 0.7rem', fontSize: '1.3rem', textDecoration: 'none' }}>Facebook</a>
+								<a href="https://plus.google.com/107163551575357959413#104093126604718687409/about" target="_blank" rel="noopener noreferrer" style={{ color: '#ff7300', margin: '0 0.7rem', fontSize: '1.3rem', textDecoration: 'none' }}>Google+</a>
+							</div>
+							<div>© {new Date().getFullYear()} Tuned Performance. Website by <a href="http://www.clickdesign.com.au/" target="_blank" rel="noopener noreferrer" style={{ color: '#ff7300', textDecoration: 'none' }}>Another Click Design</a></div>
+						</footer>
 
 		</main>
 	);
