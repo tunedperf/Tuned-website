@@ -62,9 +62,9 @@ export default function Home() {
 
 			{/* Modern Services Section */}
 						{/* Services Section */}
-						<section style={{ padding: '4rem 1rem 3rem 1rem', maxWidth: 1200, margin: '0 auto' }}>
+					<section style={{ padding: '2.2rem 0', maxWidth: '100%', width: '100%', margin: '0', boxSizing: 'border-box' }}>
 							<h2 style={{ textAlign: 'center', marginBottom: '2.5rem', fontSize: '2.2rem', fontWeight: 700, color: '#ff7300', letterSpacing: '1px' }}>Our Services</h2>
-							<div style={{ display: 'flex', gap: '1.6rem', justifyContent: 'center', alignItems: 'stretch', flexWrap: 'nowrap', overflowX: 'auto', paddingBottom: '0.6rem' }}>
+							<div style={{ display: 'flex', gap: '1rem', justifyContent: 'space-between', alignItems: 'stretch', flexWrap: 'nowrap', overflowX: 'hidden', width: '100%', padding: '0 3rem' }}>
 								<ServiceCard
 									title="Custom Wiring Looms"
 									icon={<svg width="32" height="32" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff7300"/><path d="M7 17v-2a2 2 0 012-2h6a2 2 0 012 2v2" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><rect x="7" y="7" width="10" height="6" rx="2" fill="#fff"/></svg>}
