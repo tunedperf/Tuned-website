@@ -106,7 +106,7 @@ export default function Home() {
 			<section style={{ width: '100%', boxSizing: 'border-box', padding: '1.5rem 2rem', marginTop: '2rem' }}>
 				<div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap' }}>
 					{/* Facebook Feed (left) */}
-					<div style={{ flex: '1 1 58%', minWidth: 320, maxWidth: 760, minHeight: 360, display: 'flex', flexDirection: 'column', background: '#222', borderRadius: 12, padding: '1rem' }}>
+					<div style={{ flex: '1 1 58%', minWidth: 320, maxWidth: 760, height: 360, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', background: '#222', borderRadius: 12, padding: '0.8rem 0.9rem' }}>
 						<h3 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.2rem', marginBottom: '0.8rem', textAlign: 'left' }}>Follow Us on Facebook</h3>
 						<div style={{ width: '100%', display: 'block', flex: 1 }}>
 							<iframe
@@ -122,7 +122,7 @@ export default function Home() {
 						</div>
 					</div>
 					{/* Contact Form (right) */}
-					<div style={{ flex: '0 0 360px', minWidth: 320, background: '#fff', color: '#181818', borderRadius: 12, padding: '0.9rem', boxShadow: '0 2px 18px rgba(0,0,0,0.08)', display: 'flex', flexDirection: 'column' }}>
+					<div style={{ height: 360, minWidth: 320, background: '#fff', color: '#181818', borderRadius: 12, padding: '0.8rem 0.9rem', boxShadow: '0 2px 18px rgba(0,0,0,0.08)', display: 'flex', flexDirection: 'column', boxSizing: 'border-box' }}>
 						<h3 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.6rem', textAlign: 'left' }}>Contact Form</h3>
 <form style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', flex: 1, justifyContent: 'space-between' }}>
 										<div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
