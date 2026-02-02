@@ -106,14 +106,14 @@ export default function Home() {
 			<section style={{ width: '100%', boxSizing: 'border-box', padding: '1.5rem 2rem', marginTop: '2rem' }}>
 				<div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap' }}>
 					{/* Facebook Feed (left) */}
-					<div style={{ flex: '1 1 58%', minWidth: 320, maxWidth: 760, background: '#222', borderRadius: 12, padding: '1rem' }}>
+					<div style={{ flex: '1 1 58%', minWidth: 320, maxWidth: 760, minHeight: 360, display: 'flex', flexDirection: 'column', background: '#222', borderRadius: 12, padding: '1rem' }}>
 						<h3 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.2rem', marginBottom: '0.8rem', textAlign: 'left' }}>Follow Us on Facebook</h3>
-						<div style={{ width: '100%', display: 'block' }}>
+						<div style={{ width: '100%', display: 'block', flex: 1 }}>
 							<iframe
 								src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftuned.performance.aus&tabs=timeline&width=760&height=360&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
 								width="100%"
-								height="360"
-								style={{ border: 'none', borderRadius: 8, overflow: 'hidden', background: '#181818' }}
+								
+								style={{ height: '100%', border: 'none', borderRadius: 8, overflow: 'hidden', background: '#181818' }}
 								scrolling="no"
 								frameBorder={0}
 								allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
@@ -122,13 +122,13 @@ export default function Home() {
 						</div>
 					</div>
 					{/* Contact Form (right) */}
-					<div style={{ flex: '0 0 320px', minWidth: 260, background: '#fff', color: '#181818', borderRadius: 12, padding: '0.9rem', boxShadow: '0 2px 18px rgba(0,0,0,0.08)' }}>
+					<div style={{ flex: '0 0 360px', minWidth: 320, background: '#fff', color: '#181818', borderRadius: 12, padding: '0.9rem', boxShadow: '0 2px 18px rgba(0,0,0,0.08)', display: 'flex', flexDirection: 'column' }}>
 						<h3 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.6rem', textAlign: 'left' }}>Contact Form</h3>
-						<form style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-							<input type="text" placeholder="Your Name" required style={{ padding: '0.6rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '0.95rem' }} />
+<form style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', flex: 1, justifyContent: 'space-between' }}>
+										<div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+											<input type="text" placeholder="Your Name" required style={{ padding: '0.6rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '0.95rem' }} />
 							<input type="email" placeholder="Your Email" required style={{ padding: '0.6rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '0.95rem' }} />
-							<textarea placeholder="Your Message" required rows={4} style={{ padding: '0.6rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '0.95rem' }} />
-							<button type="submit" style={{ background: '#ff7300', color: '#fff', padding: '0.8rem', borderRadius: 6, fontWeight: 700, fontSize: '0.95rem', border: 'none', cursor: 'pointer' }}>Send Message</button>
+							<textarea placeholder="Your Message" required rows={4} style={{ padding: '0.6rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '0.95rem' }} />										</div>							<button type="submit" style={{ background: '#ff7300', color: '#fff', padding: '0.8rem', borderRadius: 6, fontWeight: 700, fontSize: '0.95rem', border: 'none', cursor: 'pointer' }}>Send Message</button>
 						</form>
 					</div>
 				</div>
