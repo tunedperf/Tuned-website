@@ -64,7 +64,7 @@ export default function Home() {
 						{/* Services Section */}
 					<section style={{ padding: '2.2rem 0', maxWidth: '100%', width: '100%', margin: '0', boxSizing: 'border-box' }}>
 							<h2 style={{ textAlign: 'center', marginBottom: '2.5rem', fontSize: '2.2rem', fontWeight: 700, color: '#ff7300', letterSpacing: '1px' }}>Our Services</h2>
-							<div style={{ display: 'flex', gap: '1rem', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'nowrap', overflowX: 'hidden', width: '100%', padding: '0 3rem' }}>
+							<div style={{ display: 'flex', gap: '0.6rem', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'nowrap', overflowX: 'hidden', width: '100%', padding: '0 2rem' }}>
 								<ServiceCard
 									title="Custom Wiring Looms"
 									icon={<svg width="32" height="32" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#ff7300"/><path d="M7 17v-2a2 2 0 012-2h6a2 2 0 012 2v2" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><rect x="7" y="7" width="10" height="6" rx="2" fill="#fff"/></svg>}
@@ -102,32 +102,36 @@ export default function Home() {
 							</div>
 						</section>
 
-			{/* Social Media Feed (below services) */}
-			<section style={{ background: '#222', padding: '2rem 1rem', margin: '2rem auto 0 auto', maxWidth: 820, borderRadius: 16, textAlign: 'center' }}>
-				<h2 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.7rem', marginBottom: '1rem' }}>Follow Us on Facebook</h2>
-				<div style={{ width: '100%', maxWidth: 760, margin: '0 auto' }}>
-					<iframe
-						src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftuned.performance.aus&tabs=timeline&width=760&height=360&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-						width="100%"
-						height="360"
-						style={{ border: 'none', borderRadius: 12, overflow: 'hidden', background: '#181818' }}
-						scrolling="no"
-						frameBorder={0}
-						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-						title="Facebook Feed"
-					></iframe>
+			{/* Social & Contact Row (below services) */}
+			<section style={{ width: '100%', boxSizing: 'border-box', padding: '1.5rem 2rem', marginTop: '2rem' }}>
+				<div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+					{/* Facebook Feed (left) */}
+					<div style={{ flex: '1 1 58%', minWidth: 320, maxWidth: 760, background: '#222', borderRadius: 12, padding: '1rem' }}>
+						<h3 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.2rem', marginBottom: '0.8rem', textAlign: 'left' }}>Follow Us on Facebook</h3>
+						<div style={{ width: '100%', display: 'block' }}>
+							<iframe
+								src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftuned.performance.aus&tabs=timeline&width=760&height=360&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+								width="100%"
+								height="360"
+								style={{ border: 'none', borderRadius: 8, overflow: 'hidden', background: '#181818' }}
+								scrolling="no"
+								frameBorder={0}
+								allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+								title="Facebook Feed"
+							></iframe>
+						</div>
+					</div>
+					{/* Contact Form (right) */}
+					<div style={{ flex: '0 0 320px', minWidth: 260, background: '#fff', color: '#181818', borderRadius: 12, padding: '0.9rem', boxShadow: '0 2px 18px rgba(0,0,0,0.08)' }}>
+						<h3 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.6rem', textAlign: 'left' }}>Contact Form</h3>
+						<form style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+							<input type="text" placeholder="Your Name" required style={{ padding: '0.6rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '0.95rem' }} />
+							<input type="email" placeholder="Your Email" required style={{ padding: '0.6rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '0.95rem' }} />
+							<textarea placeholder="Your Message" required rows={4} style={{ padding: '0.6rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '0.95rem' }} />
+							<button type="submit" style={{ background: '#ff7300', color: '#fff', padding: '0.8rem', borderRadius: 6, fontWeight: 700, fontSize: '0.95rem', border: 'none', cursor: 'pointer' }}>Send Message</button>
+						</form>
+					</div>
 				</div>
-			</section>
-
-			{/* Contact Form (below services) */}
-			<section style={{ background: '#fff', color: '#181818', padding: '2rem 1rem', margin: '1.6rem auto 0 auto', maxWidth: 640, borderRadius: 12, boxShadow: '0 2px 24px rgba(0,0,0,0.10)' }}>
-				<h2 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.6rem', marginBottom: '1rem', textAlign: 'center' }}>Contact Form</h2>
-				<form style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-					<input type="text" placeholder="Your Name" required style={{ padding: '0.7rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '1rem' }} />
-					<input type="email" placeholder="Your Email" required style={{ padding: '0.7rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '1rem' }} />
-					<textarea placeholder="Your Message" required rows={4} style={{ padding: '0.7rem', borderRadius: 6, border: '1px solid #ccc', fontSize: '1rem' }} />
-					<button type="submit" style={{ background: '#ff7300', color: '#fff', padding: '0.9rem', borderRadius: 6, fontWeight: 700, fontSize: '1rem', border: 'none', cursor: 'pointer', marginTop: '0.2rem' }}>Send Message</button>
-				</form>
 			</section>
 
 			{/* Modern Contact Section */}
