@@ -96,19 +96,20 @@ export default function Home() {
 									desc="Custom exhausts, intercooler piping, and turbo kit fabrication in-house."
 								/>
 										{/* Social Media Feed */}
-										<section style={{ background: '#222', padding: '3rem 1rem', margin: '0 auto', maxWidth: 900, borderRadius: 16, marginTop: '3rem', textAlign: 'center' }}>
-											<h2 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.7rem', marginBottom: '1.5rem' }}>Follow Us on Instagram</h2>
-											<iframe
-												src="https://www.instagram.com/tuned.performance.aus/embed"
-												width="100%"
-												height="400"
-												style={{ border: 'none', borderRadius: 12, background: '#181818' }}
-												allowTransparency={true}
-												allow="encrypted-media"
-												title="Instagram Feed"
-											></iframe>
-										</section>
-
+                                        <section style={{ background: '#222', padding: '2rem 1rem', margin: '0 auto', maxWidth: 700, borderRadius: 16, marginTop: '3rem', textAlign: 'center' }}>
+                                            <h2 style={{ color: '#ff7300', fontWeight: 700, fontSize: '1.7rem', marginBottom: '1rem' }}>Follow Us on Facebook</h2>
+                                            <div style={{ width: '100%', maxWidth: 700, margin: '0 auto' }}>
+                                                <iframe
+                                                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftuned.performance.aus&tabs=timeline&width=700&height=420&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                                    width="100%"
+                                                    height="420"
+                                                    style={{ border: 'none', borderRadius: 12, overflow: 'hidden', background: '#181818' }}
+                                                    scrolling="no"
+                                                    frameBorder={0}
+                                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                                    title="Facebook Feed"
+                                                ></iframe>
+                                            </div>                                        </section>
 										{/* Contact Form */}
 										<section style={{ background: '#fff', color: '#181818', padding: '3rem 1rem', margin: '3rem auto 0 auto', maxWidth: 600, borderRadius: 16, boxShadow: '0 2px 24px rgba(0,0,0,0.10)' }}>
 											<h2 style={{ color: '#ff7300', fontWeight: 700, fontSize: '2rem', marginBottom: '1.5rem', textAlign: 'center' }}>Contact Form</h2>
